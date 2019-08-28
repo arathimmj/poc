@@ -1,0 +1,29 @@
+  <div class="container p-5 my-5" style="width: 400px">
+    <form>
+      <div>
+        <label>First Name</label>
+        <input [(ngModel)]="detail.firstName" name="firstName" style="width: 300px">
+      </div>
+      <br>
+      <div>
+        <label>Last Name</label>
+        <input [(ngModel)]="detail.lastName" name="lastName" style="width: 300px">
+      </div>
+      <br>
+      <div>
+        <label>City</label>
+        <input [(ngModel)]="detail.city" name="city" style="width: 300px">
+      </div>
+      <br>
+      <div>
+        <label>PhoneNo</label>
+        <input [(ngModel)]="detail.phoneNo" name="phoneNo" style="width: 300px">
+      </div>
+      <br>
+      <div>
+        <input type="button" value="Submit" (click)="submit()">
+      </div>
+    </form>
+    <br>
+    <a href ="http://localhost:8080/api/v1/report" target ="_blank"> Download PDF </a>
+  </div>
